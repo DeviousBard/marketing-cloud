@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test HTML With SSJS</title>
+    <script runat="sever">
+        function writeHTMLFromFunction(str) {
+            Platform.Response.Write(str);
+        }
+    </script>
+</head>
+<body>
+    <script runat="sever">
+        writeHTMLFromFunction('This text was added by the "writeHTMLFromFunction()" server-side JavaScript function.');
+    </script>
+</body>
+</html>
